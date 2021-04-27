@@ -94,22 +94,23 @@ app.ticker.add(function() {
     tick += 0.1;
 });
 
-var style = new PIXI.TextStyle({
-    fontFamily: 'Helvetica',
-    fontSize: "30px",
-    word_wrap: "break-word",
-    Overflow: "auto",
-    fontWeight: 'bold',
-    fill: ['#000000'], // gradient
-    dropShadow: true,
-    dropShadowColor: '#c0c9d6',
-    dropShadowBlur: 8,
-    dropShadowAngle: Math.PI / 6,
-    dropShadowDistance: 20,
-});
+// var style = new PIXI.TextStyle({
+//     fontFamily: 'Helvetica',
+//     fontSize: "30px",
+//     wordwrap: "break-word",
+//     // Overflow: "auto",
+//     fontWeight: 'bold',
+//     fill: ['#000000'], // gradient
+//     dropShadow: true,
+//     dropShadowColor: '#c0c9d6',
+//     dropShadowBlur: 8,
+//     dropShadowAngle: Math.PI / 6,
+//     dropShadowDistance: 20,
+// });
 
-var richText = new PIXI.Text('Happy Birthday\n      Deepti', style);
-richText.x = window.innerWidth/2 - richText.getBounds().width/2;
-richText.y = window.innerHeight/2 - richText.getBounds().height/2;
+// var richText = new PIXI.Text('Happy Birthday\n      Deepti', style);
+// var richText = new PIXI.Text('Happy Birthday Deepti', style);
+// richText.x = window.innerWidth/2 - richText.getBounds().width/2;
+// richText.y = window.innerHeight/2 - richText.getBounds().height/2;
 
 app.stage.addChild(richText);
