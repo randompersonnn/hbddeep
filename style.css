@@ -1,16 +1,3 @@
-#layer{
-    width: 100%;
-    height: 100vh;
-    float: left;
-    position: absolute;
-    top: 0px;
-    left: 0;
-    background-color: black;
-    opacity: 1;
-    outline: black;
-    z-index: 12;
-}
-
 .layer{
     width: 100%;
     height: 100vh;
@@ -18,15 +5,23 @@
     position: absolute;
     top: 0px;
     left: 0;
-    background-color: black;
     opacity: 1;
     outline: black;
+}
+
+#fstlayer{
+    background-color: black;
     z-index: 12;
+}
+
+#seclayer{
+    z-index: -12;
+    background-color: white;
 }
 
 .slidecontainer {
     width: 60%;
-    margin: auto;
+    /* margin: auto; */
     position: fixed;
     bottom: 2%;
     right: 20%;
@@ -67,10 +62,13 @@
     cursor: pointer;
 }
 
-#layer #if{
+.if{
     width: 80%;
     height: 80vh;
     border: none;
-    margin: 10% 10%;
+    /* margin: 10% 10%; */
     outline: none;
+    position: relative;
+    top: 10%;
+    left: 10%;
 }
