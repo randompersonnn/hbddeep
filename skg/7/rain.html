@@ -10,6 +10,37 @@
 
   <link rel="stylesheet" href="css/main.css?v=1.0">
 
+  <style>
+    .ab{
+      display: inline-block;
+      position: absolute;
+      top: 40vh;
+      left: 40%;
+      font-size: 1.5rem;
+      font-style: italic;
+      align-items: center;
+      word-wrap: break-word;
+      font-Family: 'Helvetica';
+      /* font-Size: "30px"; */
+      font-Weight: 'bold';
+      fill: '#000000'; /* gradient */
+      filter: drop-shadow(30px 10px 4px rgb(112, 108, 108));
+      /* filter: drop-Shadow("true");
+      filter : drop-Shadow-Color('#c0c9d6');
+      filter: dropShadowBlur(8);
+      filter: dropShadowAngle(3.16824 / 6);
+      filter: dropShadowDistance(20)  ; */
+      
+    }
+
+
+    @media only screen and (max-width: 600px){
+        .ab{
+          left: 20%;
+          font-size: 1rem;
+        }
+     }
+  </style>
 </head>
 
 <body>
@@ -21,6 +52,10 @@
     var audio = document.getElementById("audio");
     audio.volume = 0.05;
   </script>
+  <div class="ab">
+    <h1>Happy Birthday Deepti</h1>
+
+  </div>
 
 
   <script src="js/pixi.js/dist/pixi.js"></script>       
