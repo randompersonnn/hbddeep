@@ -113,4 +113,4 @@ app.ticker.add(function() {
 // richText.x = window.innerWidth/2 - richText.getBounds().width/2;
 // richText.y = window.innerHeight/2 - richText.getBounds().height/2;
 
-app.stage.addChild(richText);
+// app.stage.addChild(richText);
