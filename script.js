@@ -5,42 +5,48 @@ var slider3 = document.getElementById("r3");
 var layer1 = document.getElementById("l1");
 var layer2 = document.getElementById("l2");
 var layer3 = document.getElementById("l3");
-var output = document.getElementById("ptag");
+var output = document.getElementsByClassName("sk");
 // output.innerHTML = slider1.value;
 
 slider1.oninput = function() {
-  // output.innerHTML = this.value;
-  layer1.style.opacity = 1 - this.value/100
+  output.innerHTML += " " + this.value;
+  // layer1.style.opacity = 1 - this.value/100
   if(this.value > 95){
-      layer1.style.display = "none"
-      setslide()
+    layer1.style.display = "none"
+    setslide()
   }
 }
 
 slider2.oninput = function() {
   // layer2.style.opacity = Math.abs(this.value/50)
   // hidedisplay(layer2)
+  // output.innerHTML += " " + this.value;
   if(this.value > 95){
-      layer2.style.display = "none"
-      setslide()
-
-    }
-    if(this.value < 5){
-      // layer2.style.display = "none"
-      layer1.style.display = ""
-      setslide()
-
+    layer2.style.display = "none"
+    setslide()
+    
+  }
+  if(this.value < 5){
+    // layer2.style.display = "none"
+    layer1.style.display = ""
+    setslide()
+    
   }
 }
 
 slider3.oninput = function() {
-  layer2.style.opacity = Math.abs(this.value/50)
-  hidedisplay(layer2)
+  // output.innerHTML += " " + this.value;
+  // layer2.style.opacity = Math.abs(this.value/50)
+  // hidedisplay(layer2)
   if(this.value > 95){
-      
-      
-    }
-    if(this.value < 5){
+    layer3.style.display = "none"
+    setslide()
+    
+  }
+  if(this.value < 5){
+    // layer2.style.display = "none"
+    layer2.style.display = ""
+    setslide()
     
   }
 }
@@ -56,9 +62,9 @@ function hidedisplay(s){
 }
 
 function setslide() {
-    slider1.value = "0";
-    slider2.value = "50";
-    slider3.value = "50";
+    slider1.value = 0;
+    slider2.value = 50;
+    slider3.value = 50;
 }
 
 
