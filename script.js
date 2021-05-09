@@ -9,6 +9,8 @@ var slider8 = document.getElementById("r8");
 var slider9 = document.getElementById("r9");
 var slider10 = document.getElementById("r10");
 
+var sliderst = document.getElementById("rst")
+
  var layer1 = document.getElementById("l1");
  var layer2 = document.getElementById("l2");
  var layer3 = document.getElementById("l3");
@@ -20,6 +22,8 @@ var slider10 = document.getElementById("r10");
  var layer9 = document.getElementById("l9");
  var layer10 = document.getElementById("l10");
  
+ var layerst = document.getElementById("lst");
+
  var frame1 = document.getElementById("if1");
  var frame2 = document.getElementById("if2");
  var frame3 = document.getElementById("if3");
@@ -31,16 +35,19 @@ var slider10 = document.getElementById("r10");
  var frame9 = document.getElementById("if9");
  var frame10 = document.getElementById("if10");
 
+ var framest = document.getElementById("ifst");
+
 var src1 = "skg/6/index.html"
-var src2 = "skg/2/index.html"
+var src2 = "skg/3/index.html"
 var src3 = "skg/7/rain.html"
-var src4 = "http://you.regettingold.com/10/05/2001/RGVlcHRp/"
-var src5 = "skg/3/index.html"
-var src6 = "http://skgenote.000webhostapp.com/skg/index.html"
-var src7 = "skg/10/index.html"
-var src8 = "skg/11/index.html"
-var src9 = "skg/12/index.html"
-var src10 = "img/bright.png"
+var src4 = "skg/9/index.html"
+var src5 = "skg/2/index.html"
+var src6 = "skg/10/index.html"
+var src7 = "skg/12/index.html"
+var src8 = "skg/13/index.html"
+var src9 = "http://you.regettingold.com/10/05/2001/RGVlcHRp/"
+var src10 = "skg/14/index.html"
+var srcst = "https://www.youtube.com/embed/3G9t-EzQeU4"
 
 var audio1 = document.getElementById("audio1")
 
@@ -55,6 +62,7 @@ slider1.oninput = function() {
   // output.innerHTML += " " + this.value;
   // layer1.style.opacity = 1 - this.value/100  
   if(this.value > 95){
+    remsrc()
     layer1.style.display = "none"
     frame2.src = src2;
     audio1.pause();
@@ -64,12 +72,14 @@ slider1.oninput = function() {
 
 slider2.oninput = function() {
   if(this.value > 95){
+    remsrc()
     layer2.style.display = "none"
     frame3.src = src3
     setslide()
     
   }
   if(this.value < 5){
+    remsrc()
     // layer2.style.display = "none"
     layer1.style.display = ""
     frame1.src = src1
@@ -84,12 +94,14 @@ slider3.oninput = function() {
   // layer2.style.opacity = Math.abs(this.value/50)
   // hidedisplay(layer2)
   if(this.value > 95){
+    remsrc()
     layer3.style.display = "none"
     frame4.src = src4;
     setslide()
     
   }
   if(this.value < 5){
+    remsrc()
     // layer2.style.display = "none"
     layer2.style.display = ""
     frame2.src = src2
@@ -100,12 +112,14 @@ slider3.oninput = function() {
 
 slider4.oninput = function() {
   if(this.value > 95){
+    remsrc()
     layer4.style.display = "none"
     frame5.src = src5
     setslide()
     
   }
   if(this.value < 5){
+    remsrc()
     // layer2.style.display = "none"
     layer3.style.display = ""
     frame3.src = src3
@@ -116,12 +130,15 @@ slider4.oninput = function() {
 
 slider5.oninput = function() {
   if(this.value > 95){
+    remsrc()
     layer5.style.display = "none"
     frame6.src = src6
     setslide()
     
   }
   if(this.value < 5){
+    remsrc()
+    
     // layer2.style.display = "none"
     layer4.style.display = ""
     frame4.src = src4
@@ -131,12 +148,14 @@ slider5.oninput = function() {
 }
 slider6.oninput = function() {
   if(this.value > 95){
+    remsrc()
     layer6.style.display = "none"
     frame7.src = src7
     setslide()
     
   }
   if(this.value < 5){
+    remsrc()
     // layer2.style.display = "none"
     layer5.style.display = ""
     frame5.src = src5
@@ -147,12 +166,14 @@ slider6.oninput = function() {
 
 slider7.oninput = function() {
   if(this.value > 95){
+    remsrc()
     layer7.style.display = "none"
     frame8.src = src8
     setslide()
     
   }
   if(this.value < 5){
+    remsrc()
     // layer2.style.display = "none"
     layer6.style.display = ""
     frame6.src = src6
@@ -162,12 +183,14 @@ slider7.oninput = function() {
 }
 slider8.oninput = function() {
   if(this.value > 95){
+    remsrc()
     layer8.style.display = "none"
     frame9.src = src9
     setslide()
     
   }
   if(this.value < 5){
+    remsrc()
     // layer2.style.display = "none"
     layer7.style.display = ""
     frame7.src = src7
@@ -177,12 +200,14 @@ slider8.oninput = function() {
 }
 slider9.oninput = function() {
   if(this.value > 95){
+    remsrc()
     layer9.style.display = "none"
     frame10.src = src10
     setslide()
     
   }
   if(this.value < 5){
+    remsrc()
     // layer2.style.display = "none"
     layer8.style.display = ""
     frame8.src = src8
@@ -192,12 +217,14 @@ slider9.oninput = function() {
 }
 slider10.oninput = function() {
   if(this.value > 95){
+    remsrc()
     layer10.style.display = "none"
-    // frame10.src = src10
+    framest.src = srcst
     setslide()
     
   }
   if(this.value < 5){
+    remsrc()
     // layer2.style.display = "none"
     layer9.style.display = ""
     frame9.src = src9
@@ -207,6 +234,22 @@ slider10.oninput = function() {
 }
 
 
+sliderst.oninput = function() {
+  // if(this.value > 95){
+  //   remsrc()
+  //   layer10.style.display = "none"
+  //   // frame10.src = src10
+  //   setslide()
+  // }
+  if(this.value < 5){
+    remsrc()
+    // layer2.style.display = "none"
+    layer10.style.display = ""
+    frame10.src = src10
+    setslide()
+    
+  }
+}
 
 
   // function hidedisplay(s){
@@ -224,7 +267,28 @@ function setslide() {
     slider4.value = 50;
     slider5.value = 50;
     slider6.value = 50;
+    slider7.value = 50;
+    slider8.value = 50;
+    slider9.value = 50;
+    slider10.value = 50;
+
+    sliderst.value = 100;
   }
+
+function remsrc() {
+  frame1.src = ""
+  frame2.src = ""
+  frame3.src = ""
+  frame4.src = ""
+  frame5.src = ""
+  frame6.src = ""
+  frame7.src = ""
+  frame8.src = ""
+  frame9.src = ""
+  frame10.src= ""
+
+  framest.src= ""
+}  
 
 
 

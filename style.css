@@ -1,3 +1,7 @@
+*{
+    margin: 0;
+    
+}
 .layer{
     width: 100%;
     float: left;
@@ -11,76 +15,82 @@
 
 #l1{
     background-color: white;
-    z-index: 12;
+    z-index: 22;
     /* height: 100vh; */
 
 }
 
 #l2{
-    background-color: white; 
-    z-index: 11;
+    background-color: black; 
+    z-index: 21;
     /* height: 100vh;
     top: 00vh; */
 }
 
 #l3{
     background-color: white; 
-    z-index: 10;
+    z-index: 20;
     /* height: 100vh;
     top: 00vh; */
 }
 
 #l4{
-    background-color: white; 
-    z-index: 9;
+    background-color: black; 
+    z-index: 19;
     /* height: 100vh;
     top: 00vh; */
 }
 
 #l5{
     background-color: white; 
-    z-index: 8;
+    z-index: 18;
     /* height: 100vh;
     top: 00vh; */
 }
 
 #l6{
-    background-color: rgb(112, 76, 76); 
-    z-index: 7;
+    background-color: black; 
+    z-index: 17;
     /* height: 100vh;
     top: 00vh; */
 }
 #l7{
     background-color: white; 
-    z-index: 6;
+    z-index: 16;
     /* height: 100vh;
     top: 00vh; */
 }
 #l8{
-    background-color: white; 
-    z-index: 5;
+    background-color: black; 
+    z-index: 15;
     /* height: 100vh;
     top: 00vh; */
 }
 #l9{
     background-color: white; 
-    z-index: 4;
+    z-index: 14;
     /* height: 100vh;
     top: 00vh; */
 }
 #l10{
-    background-color: white; 
-    z-index: 3;
+    background-color: black; 
+    z-index: 13;
     /* height: 100vh;
     top: 00vh; */
 }
 
+
+#lst{
+    background-color: white; 
+    z-index: 2;
+}
+
 .slidecontainer {
     width: 60%;
-    /* margin: auto; */
-    position: fixed;
-    bottom: 2%;
-    right: 20%;
+    margin: auto;
+    /* position:; */
+    /* bottom: 2%; */
+    /* right: 20%; */
 
 
   }
@@ -131,7 +141,8 @@
     width: 98%;
     height: 90vh;
     border: none;
-    margin: 1% 0.5%;
+    /* margin: 1% 0.5%; */
+    margin:0.5% 0.5% 0% 0.5%;
     outline: none;
     position: relative;
     /* top: 1%; */
