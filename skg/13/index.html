@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  text-align: center;
+  padding: 32px;
+}
+
+.row {
+  display: -ms-flexbox; /* IE 10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE 10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create two equal columns that sits next to each other */
+.column {
+  -ms-flex: 50%; /* IE 10 */
+  flex: 50%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 10px 16px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+
+img{
+    border: 2px solid black;
+    /* height: 20vh; */
+}
+
+#overlay {
+      position: fixed;
+      display: none;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0,0,0,0.5);
+      z-index: 2;
+      cursor: pointer;
+    }
+
+    #text{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 50px;
+  color: white;
+  transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+}
+</style>
+</head>
+<body>
+
+<!-- Header -->
+<div class="header" id="myHeader">
+  <h1>Collage Memories <i class="em em-hearts" aria-role="presentation" aria-label="BLACK HEART SUIT"></i></h1>
+  <!-- <p>Click on the buttons to change the grid view.</p>
+  <button class="btn" onclick="one()">1</button>
+  <button class="btn" onclick="two()">2</button>
+  <button class="btn active" onclick="four()">4</button> -->
+</div>
+
+<!-- Photo Grid -->
+<div class="row"> 
+    <div id="overlay" onclick="off()">
+        <div id="text"><img src="1.jpg" id="overimg" alt="Nature" style="height: 80vh;"></div>
+      </div>
+  <div class="column">
+    
+    <img src="1.jpg" onclick="on('1.jpg')" style="width:100%"> 
+    <img src="5.jpg" onclick="on('5.jpg')" style="width:100%"> 
+    <img src="9.jpg" onclick="on('9.jpg')" style="width:100%"> 
+    <img src="13.jpg" onclick="on('13.jpg')" style="width:100%">
+    <img src="17.jpg" onclick="on('17.jpg')" style="width:100%">
+    <img src="21.jpg" onclick="on('21.jpg')" style="width:100%">
+    <img src="25.jpg" onclick="on('25.jpg')" style="width:100%">
+    <img src="29.jpg" onclick="on('29.jpg')" style="width:100%">
+    <img src="33.jpg" onclick="on('33.jpg')" style="width:100%">
+    <img src="37.jpg" onclick="on('37.jpg')" style="width:100%">
+    <img src="41.jpg" onclick="on('41.jpg')" style="width:100%">
+    <img src="45.jpg" onclick="on('45.jpg')" style="width:100%">
+    <img src="49.jpg" onclick="on('49.jpg')" style="width:100%">
+    <img src="51.jpg" onclick="on('51.jpg')" style="width:100%">
+    <img src="57.jpg" onclick="on('57.jpg')" style="width:100%">
+    <img src="61.jpg" onclick="on('61.jpg')" style="width:100%">
+    <img src="65.jpg" onclick="on('65.jpg')" style="width:100%">
+
+    
+  </div>
+  <div class="column">
+<img src="2.jpg" onclick="on('2.jpg')" style="width:100%"> 
+<img src="6.jpg" onclick="on('6.jpg')" style="width:100%"> 
+<img src="10.jpg" onclick="on('10.jpg')" style="width:100%">
+<img src="14.jpg" onclick="on('14.jpg')" style="width:100%">
+<img src="18.jpg" onclick="on('18.jpg')" style="width:100%">
+<img src="22.jpg" onclick="on('22.jpg')" style="width:100%">
+<img src="26.jpg" onclick="on('26.jpg')" style="width:100%">
+<img src="30.jpg" onclick="on('30.jpg')" style="width:100%">
+<img src="34.jpg" onclick="on('34.jpg')" style="width:100%">
+<img src="38.jpg" onclick="on('38.jpg')" style="width:100%">
+<img src="42.jpg" onclick="on('42.jpg')" style="width:100%">
+<img src="46.png" onclick="on('46.png')" style="width:100%">
+<img src="52.jpg" onclick="on('52.jpg')" style="width:100%">
+<img src="54.jpg" onclick="on('54.jpg')" style="width:100%">
+<img src="58.jpg" onclick="on('58.jpg')" style="width:100%">
+<img src="62.jpg" onclick="on('62.jpg')" style="width:100%">
+
+
+
+    
+  </div>  
+  <div class="column">
+    <img src="3.jpg" onclick="on('3.jpg')" style="width:100%"> 
+    <img src="7.jpg" onclick="on('7.jpg')" style="width:100%"> 
+<!-- <img src="11.jpg" style="width:100%"> -->
+<img src="15.jpg" onclick="on('15.jpg')" style="width:100%">
+<img src="19.jpg" onclick="on('19.jpg')" style="width:100%">
+<img src="23.jpg" onclick="on('23.jpg')" style="width:100%">
+<img src="27.jpg" onclick="on('27.jpg')" style="width:100%">
+<img src="31.jpg" onclick="on('31.jpg')" style="width:100%">
+<img src="35.jpg" onclick="on('35.jpg')" style="width:100%">
+<img src="39.jpg" onclick="on('39.jpg')" style="width:100%">
+<img src="43.jpg" onclick="on('43.jpg')" style="width:100%">
+<img src="47.jpg" onclick="on('47.jpg')" style="width:100%">
+<img src="53.jpg" onclick="on('53.jpg')" style="width:100%">
+<img src="55.jpg" onclick="on('55.jpg')" style="width:100%">
+<img src="59.png" onclick="on('59.png')" style="width:100%">
+<img src="63.jpg" onclick="on('63.jpg')" style="width:100%">
+<img src="67.jpg" onclick="on('67.jpg')" style="width:100%">
+<img src="69.jpg" onclick="on('69.jpg')" style="width:100%">
+<img src="66.jpg" onclick="on('66.jpg')" style="width:100%"> 
+<img src="71.jpg" onclick="on('71.jpg')" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="4.jpg" onclick="on('4.jpg')" style="width:100%">
+    <img src="8.jpg" onclick="on('8.jpg')" style="width:100%">
+    <img src="12.jpg" onclick="on('12.jpg')" style="width:100%">
+    <img src="16.jpg" onclick="on('16.jpg')" style="width:100%">
+    <img src="20.jpg" onclick="on('20.jpg')" style="width:100%">
+    <img src="24.jpg" onclick="on('24.jpg')" style="width:100%">
+    <img src="28.jpg" onclick="on('28.jpg')" style="width:100%">
+    <img src="32.jpg" onclick="on('32.jpg')" style="width:100%">
+    <img src="36.jpg" onclick="on('36.jpg')" style="width:100%"> 
+    <img src="40.jpg" onclick="on('40.jpg')" style="width:100%">
+    <img src="44.jpg" onclick="on('44.jpg')" style="width:100%">
+    <img src="48.jpg" onclick="on('48.jpg')" style="width:100%">
+    <img src="50.jpg" onclick="on('50.jpg')" style="width:100%">
+    <img src="56.jpg" onclick="on('56.jpg')" style="width:100%">
+    <img src="60.png" onclick="on('60.png')" style="width:100%">
+    <img src="64.jpg" onclick="on('64.jpg')" style="width:100%">
+    <img src="68.jpg" onclick="on('68.jpg')" style="width:100%">
+<img src="70.jpg" style="width:100%">   
+     <img src="72.jpg" style="width:100%">
+  </div>
+</div>
+
+<script>
+// Get the elements with class="column"
+var elements = document.getElementsByClassName("column");
+four()
+// Declare a loop variable
+var i;
+
+// Full-width images
+function one() {
+    for (i = 0; i < elements.length; i++) {
+    elements[i].style.msFlex = "100%";  // IE10
+    elements[i].style.flex = "100%";
+  }
+}
+
+// Two images side by side
+function two() {
+  for (i = 0; i < elements.length; i++) {
+    elements[i].style.msFlex = "50%";  // IE10
+    elements[i].style.flex = "50%";
+  }
+}
+
+// Four images side by side
+function four() {
+  for (i = 0; i < elements.length; i++) {
+    elements[i].style.msFlex = "25%";  // IE10
+    elements[i].style.flex = "25%";
+  }
+}
+
+// Add active class to the current button (highlight it)
+// var header = document.getElementById("myHeader");
+// var btns = header.getElementsByClassName("btn");
+// for (var i = 0; i < btns.length; i++) {
+//   btns[i].addEventListener("click", function() {
+//     var current = document.getElementsByClassName("active");
+//     current[0].className = current[0].className.replace(" active", "");
+//     this.className += " active";
+//   });
+// }
+  function on(imgsrc) {
+    document.getElementById("overlay").style.display = "block";
+    let s =  imgsrc
+    let imgmain = document.getElementById("overimg")
+    imgmain.src = s
+  }
+  
+  function off() {
+    document.getElementById("overlay").style.display = "none";
+  }
+</script>
+
+</body>
+</html>
