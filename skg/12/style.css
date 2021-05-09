@@ -15,6 +15,10 @@
         max-width: 600px;
  }
 
+ .carousel-inner img{
+     height: 70vh;
+
+ }
 
 @media only screen and (max-width: 1030px) {
     .h3-left, .h3-right {
@@ -216,18 +220,23 @@ h2 {
     margin: auto;
 }
 
-#bg-image1, #bg-image2, #bg-image3 {
+#bg-image1, #bg-image2, #bg-image3, #bg-image4 {
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
 }
 
-#bg-image3 {
-    background-image: url(img/card.jpeg);
+#bg-image4 {
+    background-image: url(img/bg.jpg);
 }
 
-#bg-image2 {
+#bg-image3 {
     background-image: url(img/balloons.jpeg);
+}
+
+
+#bg-image2 {
+    background-image: url(img/card.jpeg);
 }
 
 #bg-image1 {
