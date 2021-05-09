@@ -45,9 +45,9 @@ var src5 = "skg/2/index.html"
 var src6 = "skg/10/index.html"
 var src7 = "skg/12/index.html"
 var src8 = "skg/13/index.html"
-var src9 = "http://you.regettingold.com/10/05/2001/RGVlcHRp/"
-var src10 = "skg/14/index.html"
-var srcst = "https://www.youtube.com/embed/3G9t-EzQeU4"
+var src9 = "skg/14/index.html"
+var src10 = "https://www.youtube.com/embed/3G9t-EzQeU4"
+var srcst = "last.html"
 
 var audio1 = document.getElementById("audio1")
 
@@ -97,6 +97,7 @@ slider3.oninput = function() {
     remsrc()
     layer3.style.display = "none"
     frame4.src = src4;
+    // audio1.play()
     setslide()
     
   }
@@ -105,6 +106,7 @@ slider3.oninput = function() {
     // layer2.style.display = "none"
     layer2.style.display = ""
     frame2.src = src2
+    // audio1.pause()
     setslide()
     
   }
@@ -133,6 +135,7 @@ slider5.oninput = function() {
     remsrc()
     layer5.style.display = "none"
     frame6.src = src6
+    audio1.pause()
     setslide()
     
   }
@@ -151,6 +154,7 @@ slider6.oninput = function() {
     remsrc()
     layer6.style.display = "none"
     frame7.src = src7
+
     setslide()
     
   }
@@ -216,13 +220,13 @@ slider9.oninput = function() {
   }
 }
 slider10.oninput = function() {
-  if(this.value > 95){
-    remsrc()
-    layer10.style.display = "none"
-    framest.src = srcst
-    setslide()
+  // if(this.value > 95){
+  //   remsrc()
+  //   layer10.style.display = "none"
+  //   framest.src = srcst
+  //   setslide()
     
-  }
+  // }
   if(this.value < 5){
     remsrc()
     // layer2.style.display = "none"
@@ -270,7 +274,7 @@ function setslide() {
     slider7.value = 50;
     slider8.value = 50;
     slider9.value = 50;
-    slider10.value = 50;
+    slider10.value = 100;
 
     sliderst.value = 100;
   }
