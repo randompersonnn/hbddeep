@@ -81,17 +81,21 @@ img{
   top: 50%;
   left: 50%;
   font-size: 50px;
+  overflow-x: auto;
   color: white;
   transform: translate(-50%,-50%);
   -ms-transform: translate(-50%,-50%);
 }
+
+
+
 </style>
 </head>
 <body>
 
 <!-- Header -->
 <div class="header" id="myHeader">
-  <h1  style="color: #f1f1f1;">Collage Memories <i class="em em-hearts" aria-role="presentation" aria-label="BLACK HEART SUIT"></i></h1>
+  <h1 style="color: #f1f1f1;">Collage Memories <i class="em em-hearts" aria-role="presentation" aria-label="BLACK HEART SUIT"></i></h1>
   <!-- <p>Click on the buttons to change the grid view.</p>
   <button class="btn" onclick="one()">1</button>
   <button class="btn" onclick="two()">2</button>
@@ -101,7 +105,7 @@ img{
 <!-- Photo Grid -->
 <div class="row"> 
     <div id="overlay" onclick="off()">
-        <div id="text"><img src="1.jpg" id="overimg" alt="Nature" style="height: 80vh;"></div>
+        <div id="text"><img src="1.jpg" id="overimg" alt="Nature" style="width: 80vh;"></div>
       </div>
   <div class="column">
     
