@@ -1,6 +1,6 @@
 this.$dom = {};
 this.$dom.animatedText = document.createElement('div');
-this.text = "THIS IS MESSAGE SECTION OF THIS WEBSITE.DEMO MESSAGE- Your custom message";  // MESSAGE AREA , THIS CAN BE CHANGED FROM YOUR MESSAGE :)
+this.text = "Wishing the most glorious birthday ever to You Happy birthday, Deep! There’s no better friend than you, and there's no one I would rather share my thoughts and secrets with. I hope you have the most fabulous day today as you truly deserve it. You are a true companion and a great woman. I wish you only the best, lots of love, health and that every one of your dreams may come true. I know that I can trust you with absolutely anything, and that I’ll always receive the best advice from you. I am so lucky to have a best friend like you! Wishing you a day filled with loveliness, Thank you for consistently being the amazing person and friend that you are!";  // MESSAGE AREA , THIS CAN BE CHANGED FROM YOUR MESSAGE :)
 this.$dom.container = document.getElementById('container');
 this.$dom.container.appendChild(this.$dom.animatedText);
 animateText();
